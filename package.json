@@ -1,0 +1,20 @@
+{
+  "name": "modulefederation",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Ryan Bautista",
+  "license": "ISC",
+  "workspaces": {
+    "packages": [
+      "app1",
+      "app2"
+    ]
+  },
+  "scripts": {
+    "start": "lerna run --parallel start",
+    "build": "lerna run build"
+  },
+  "devDependencies": {
+    "lerna": "^8.1.2"
+  }
+}
